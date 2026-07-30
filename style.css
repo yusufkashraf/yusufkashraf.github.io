@@ -1,9 +1,57 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 0 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117; /* Github dark theme color */
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+h1 {
+    color: #58a6ff; /* Accent blue */
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+p {
     line-height: 1.6;
-    background-color: #f4f4f9;
-    color: #333;
+    margin-bottom: 20px;
+    color: #8b949e;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #238636; /* GitHub green */
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2ea043;
 }

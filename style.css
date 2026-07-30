@@ -55,3 +55,14 @@ p {
 .btn:hover {
     background-color: #2ea043;
 }
+
+#typing::after {
+    content: "|";
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

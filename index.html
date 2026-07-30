@@ -6,9 +6,25 @@
     <title>Yusuf's Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    const text = "Yusuf Kamal Ashraf";
+    const heading = document.getElementById("typing");
+
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            heading.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(type, 100);
+        }
+    }
+
+    type();
+</script>
 <body>
     <div class="card">
-        <h1>Yusuf Kamal Ashraf</h1>
+        <h1 id="typing"></h1>
         <p>Placeholder paragraph text.</p>
         <a href="https://github.com/yusufkashraf" class="btn">View GitHub</a>
     </div>

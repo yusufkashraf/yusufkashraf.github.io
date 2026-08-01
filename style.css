@@ -82,3 +82,8 @@ h2 {
 strong {
     color: #c9d1d9;
 }
+
+span {
+    color: #8b949e;
+    font-style: italic;
+}

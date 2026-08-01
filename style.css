@@ -39,6 +39,7 @@ p {
     line-height: 1.6;
     margin-bottom: 20px;
     color: #8b949e;
+    text-align: left;
 }
 
 .btn {
@@ -91,4 +92,8 @@ span {
 .project {
     text-align: left;
     margin-bottom: 25px;
+}
+
+.intro {
+    text-align: center;
 }

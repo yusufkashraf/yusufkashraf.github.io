@@ -87,3 +87,8 @@ span {
     color: #8b949e;
     font-style: italic;
 }
+
+.project {
+    text-align: left;
+    margin-bottom: 25px;
+}

@@ -1,6 +1,3 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,53 +5,50 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #0d1117; /* Github dark theme color */
-    color: #c9d1d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: #ddd;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 55px 28px;
 }
 
 .card {
-    background-color: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 12px;
-    padding: 32px;
-    max-width: 500px;
     width: 100%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    text-align: center;
 }
 
 h1 {
-    color: #58a6ff; /* Accent blue */
-    font-size: 2rem;
-    margin-bottom: 12px;
+    color: #eee;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 14px;
 }
 
 p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #8b949e;
+    color: #aaa;
+    line-height: 1.7;
+    margin-bottom: 18px;
     text-align: left;
+}
+
+.intro {
+    max-width: 620px;
+    text-align: left;
+    font-size: 1.05rem;
 }
 
 .btn {
     display: inline-block;
-    background-color: #238636; /* GitHub green */
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 6px;
+    color: #8ab4f8;
     text-decoration: none;
     font-weight: 600;
-    transition: background 0.2s ease;
+    margin-top: 2px;
+    transition: color 0.15s ease;
 }
 
 .btn:hover {
-    background-color: #2ea043;
+    color: #b5d0ff;
+    text-decoration: underline;
 }
 
 #typing::after {
@@ -69,36 +63,47 @@ p {
 }
 
 .divider {
-    margin: 25px 0;
+    margin: 42px 0;
     border: 0;
-    border-top: 1px solid #30363d;
+    border-top: 1px solid #292929;
 }
 
 h2 {
-    color: #58a6ff;
-    margin-bottom: 15px;
-    font-size: 1.4rem;
+    color: #eee;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 strong {
-    color: #c9d1d9;
+    color: #ddd;
 }
 
 span {
-    color: #8b949e;
+    color: #888;
     font-style: italic;
 }
 
 .project {
     text-align: left;
-    margin-bottom: 25px;
-}
-
-.intro {
-    text-align: center;
+    margin-bottom: 34px;
 }
 
 .project span {
-    color: #8b949e;
+    color: #888;
     font-size: 0.9rem;
+}
+
+.project p {
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
 }
